@@ -10,9 +10,13 @@ zip -r ../my_deployment_package.zip .
 zip my_deployment_package.zip lambda_function.py
 5. Load zip-file to AWS Lambda.
 6. Specify event values in format:
-   ```json
-   { "bucket_name": "bucket_name",
-  "filename": "output_filename.csv"}
-   ```
+
+```json
+   { 
+   "bucket_name": "bucket_name",
+  "filename": "output_filename.csv"
+  }
+```
+
 7. Execute function.
 
